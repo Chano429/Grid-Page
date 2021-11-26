@@ -1,0 +1,63 @@
+body{
+    margin: 0px;
+    padding: 0px;
+}
+
+#seccion-negro{
+    color: white;
+    height: 300px;
+    background-color: black;
+    display: flex;
+    grid-template-areas: 
+        "teto titulo vacio2."
+        "vacio1 titulo vacio2."
+        "vacio1 titulo descripcion vacio2";
+    grid-template-columns: repeat(3,2fr);
+    grid-template-rows: repeat(3,1fr);
+}
+
+#seccion-blanco{
+    display: flex;
+    max-width: 700px;
+    margin: auto;
+    align-items: center;
+}
+
+#seccion-blanco img{
+    width: 300px;
+}
+
+.responsive-img{
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+}
+
+#seccion-negro__titulo{
+    grid-area: titulo;
+    color: white;
+    font-size: 3rem;
+    font-weight: 900;
+}
+.menu{
+    color: white;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+.menu li{
+    display: inline;
+    margin: 10px 10px ;
+}
+.seccion-blanco__card{
+    width: 300px;
+    display: flex;
+    flex-direction: column ;
+}
+
+.seccion-blanco__card h2{
+    font-size: 3rem;
+}
